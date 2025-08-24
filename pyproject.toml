@@ -1,0 +1,19 @@
+[project]
+name = "restful-booker-locust"
+version = "0.1.0"
+description = "Locust test task for Meteoro Platform - AQA Engineer"
+dependencies = [
+    "locust"
+]
+
+[tool.ruff]
+line-length = 120
+# Group violations by containing file.
+output-format = "grouped"
+# Enable preview features.
+preview = true
+# Enumerate all fixed violations.
+show-fixes = true
+
+[tool.ruff.lint]
+select = ["E", "W", "F", "I", "N", "B", "Q", "ANN", "RET", "SLF", "SIM", "UP", "COM", "PL", "PERF", "RUF"]
