@@ -1,6 +1,6 @@
-# Restful Booker Meteoro Locust
+# Locust performance tests for the Restful Booker API
 
-Locust performance tests for the Restful Booker API as part of Meteoro Platform - AQA Engineer assignment.
+Test task for Meteoro Platform - AQA Engineer.
 
 ## Project Structure
 
@@ -11,6 +11,8 @@ Locust performance tests for the Restful Booker API as part of Meteoro Platform 
 - `config.py` - Configuration settings (API host)
 - `pyproject.toml` - Python project configuration (contains dependencies)
 - `.gitignore` - Git ignore rules
+- `requirements.txt` - Dependencies list
+- `uv.lock` - Dependency lock file
 
 ## Installation
 
@@ -48,7 +50,7 @@ Dependencies are installed from pyproject.toml:
 uv sync
 ```
 
-## 4. Running Tests
+## Running Tests
 
 ### Web Interface
 
@@ -97,3 +99,8 @@ Edit `locustfile.py` to modify:
 - Test data
 - Task weights
 - Wait times between requests
+
+Edit test run parameters:  
+`-u` - number of users (peak)  
+`-r` - ramp up (users/sec)  
+`--run-time` - run time
